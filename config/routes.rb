@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
   root 'home#racing'
+  # get 'press' => 'home#press'
+  get 'company' => 'home#company'
+  get 'investors' => 'home#investors'
+  get 'racing' => 'home#racing'
+  get 'sport' => 'home#sport'
+  get 'electric' => 'home#electric'
+  get 'reserve' => 'home#reserve'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

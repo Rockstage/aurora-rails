@@ -1,0 +1,32 @@
+<div id="header" class="container-fluid dark graybg">
+	<div class="row">
+		<div class="col-sm-6">
+			<%= link_to image_tag("aurora-web-logo.png", class: "logo2", alt: "Logo of Trevor AI"), root_path %>
+		</div>
+		<div class="col-sm-6">
+			<ul class="nav navbar-nav navbar-right">
+				<li><%= link_to "Aurora R", racing_path, class: '' %></li>
+				<li><%= link_to "Aurora S", sport_path, class: '' %></li>
+				<li class="active"><%= link_to "Aurora E", electric_path, class: '' %></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid dark">
+	<div class="row section-top">
+		<h1 class="text-center feature-title">Electrifying mobility</h1>
+		<%= image_tag("web1.png", class: "render") %>
+		<div class="text-center sexy-stats feature-content">
+			<ul class="bottom">
+			<li>998kg</li>
+			<li>3WD Hybrid</li>
+			<li>400 HP/ton</li>
+			<li>70 MPG</li>
+			<li>L5c, 2-seater</li>
+			<li>~$750/mo</li>
+			<li>Coming 2022</li>
+			</ul>
+		</div>
+	</div>
+</div>

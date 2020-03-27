@@ -1,0 +1,46 @@
+<div id="intro-small" class="container-fluid dark graybg">
+	<div class="row">
+
+		<%= link_to (image_tag("aurora-web-logo.png", class: "logo", alt: "Logo of Trevor AI")), root_path %>
+		<h3 class="animated fadeIn"><%= link_to "Home", root_path %> / Press</h3>
+	
+	</div>
+	
+</div>
+
+<div id="press" class="container-fluid section">
+	<div class="container">
+		<div class="row">
+			<h1>Boilerplate</h1>
+			<hr/>
+			<p class="faded">History</p>
+			<p>Trevor Labs, ltd. is aiming to solve some of the fundamental challenges of time management, in modern-day life, using basic artificial intelligence technology. The company is based in Europe and was developed with support of the <%= link_to "Founder Institute", "http://fi.co/", :target => "_blank" %>. Founded in February 2016, by <%= link_to "George Petrov", "https://bg.linkedin.com/in/george-petrov-a5b25147", :target => "_blank" %>, Trevor Labs is actively developing it’s product - <%= link_to "Trevor AI", "http://www.trevorai.com/", :target => "_blank" %>. Trevor AI, initially launched on iOS as <%= link_to "Trevor AI - Time Management Assistant", "https://itunes.apple.com/app/trevor-ai-time-management/id1113523247", :target => "_blank" %>. The app bridges the gap between todo lists and calendars, allowing users to easily schedule everything they do in their calendar. The free app already helped schedule thousands of tasks, a good amount of which were completed as well.</p>
+
+			<p class="faded">Future</p>
+			<p>
+			Modern-day productivity is becoming increasingly more difficult due to many factors: complexity of tasks, online collaboration, the massive variety of tools, decision overload, and the outstanding amount of information that goes through our attentional filters. Being productive requires simplicity, discipline and understanding of time. At Trevor Labs, we believe that intelligent software can recrate the way we naturally manage time in our heads, thus helping us be better at it, without thinking much about it. To validate this hypothesis, the company is developing a conversational bot for (messenger, slack, cortana, etc), accompanied by a web version of the app. Learn more about Trevor's new - Natural, approach to time management at <%= link_to "www.trevorai.com", "http://www.trevorai.com/", :target => "_blank" %></p>
+			
+			<h1>Logo Assets</h1>
+			<hr/>
+			<div class="col-md-6 assets-preview">
+				<%= image_tag("TrevorBlackOnWhite.png") %>
+				<%= image_tag("TrevorBlackOnTP.png") %>
+			</div>
+			<div class="col-md-6 assets-preview">
+				<%= image_tag("TrevorWhiteOnTP.png") %>
+				<%= image_tag("TrevorWhiteOnBlack.png") %>
+			</div>
+
+			<%= link_to "View in Google Drive", "https://drive.google.com/folderview?id=0B0E5slzU8QehS0dqQ0RHVXlhYWc&usp=sharing", class: "button button-blue", target: "_blank" %>
+			
+			<h1>Lead Roles</h1>
+			<hr/>
+			<div class="roles">
+				<%= image_tag("profileGeorge.jpg") %><%= link_to "George Petrov, Founder", "https://bg.linkedin.com/in/george-petrov-a5b25147", :target => "_blank" %><br />
+				<%= image_tag("profileDmitry.jpg") %><%= link_to "Dmitry Yudakov, Tech Co-founder", "https://bg.linkedin.com/in/dmitryyudakov", :target => "_blank" %><br />
+				<%= image_tag("profileFI.jpg") %><%= link_to "Founder Institute, Incubator", "http://fi.co", :target => "_blank" %><br />
+			</div>
+			<%= link_to "Go to Team page", company_path, class: "button button-blue" %>
+		</div>
+	</div>
+</div>

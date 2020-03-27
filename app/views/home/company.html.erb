@@ -1,0 +1,73 @@
+<div id="intro-small" class="container-fluid dark graybg">
+	<div class="row">
+		<%= link_to (image_tag("aurora-web-logo.png", class: "logo", alt: "Logo of Trevor AI")), root_path %>
+		<h3 class="animated fadeIn"><%= link_to "Home", root_path %> / Company</h3>
+	</div>
+</div>
+
+<div class="container-fluid dark">
+	<div class="row section-top">
+        <h1 class="text-center feature-title">Dare to make automotive history</h1>
+        <%= image_tag("web5.png", class: "render") %>
+        <div class="feature-content">
+			<div class="col-md-6 feature-column">
+				<h3 class="">The company</h3>
+				<p>We are a design studio, specialized in conceptualizing and development of prototype vehicles, later leased to manufacturers for mass production. Interested in joining us? <a href="mailto:george@trevorlabs.com">Let's do it!</a>.</p>
+			</div>
+			<div class="col-md-6 feature-column">
+				<h3 class="">Project Aurora</h3>
+				<p>The concept and copyrighted design of Aurora is the brainchild of George Petrov. Get in touch via <a href="https://www.linkedin.com/in/george-petrov-a5b25147">LinkedIn</a> and <a href="mailto:george@trevorlabs.com">Email</a>.</p>
+			</div>
+		</div>
+    </div>
+</div>
+
+<% if false %>
+
+<div id="team" class="container-fluid section dark">
+	<div class="row section">
+		<h1 class="text-center feature-title">Reserve yours, now</h1>
+		<%= image_tag("web5.png", class: "render") %>
+		<div class="feature-content">
+			<div class="col-md-4 feature-column">
+				<h3 class="">Handcrafted interior</h3>
+				<p>Aurora's interiors are handcrafted with sustainable, high-quality materials, such as Alcantara, Aluminium, Hemp and 3D printed parts.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Modern tech</h3>
+				<p>Auroras feature a digital user interface, voice control assistant, digital mirrors and biometric immobilizer, as well as the usual stereo system, parktronic and other creature comforts.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Safety-checked</h3>
+				<p>Auroras comply with L5c category vehicle safety in EU & US, and come equipped with: ABS, ESP, TC, Airbags and Autonomous Braking.</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<h1>Open Positions</h1>
+			<hr/>
+			<div class="roles text-center">
+				<div class="col-md-4">
+					<%= image_tag("profileGeorge.jpg") %><div class="member"><%= link_to "George Petrov", "https://bg.linkedin.com/in/george-petrov-a5b25147", :target => "_blank" %><br/><p>Founder</p></div>
+
+					<%= image_tag("profileDaniela.jpg") %><div class="member"><%= link_to "Daniela Ilieva-Koleva, PhD", "https://bg.linkedin.com/in/daniela-ilieva-koleva-phd-73625a25", :target => "_blank" %><br/><p>Productivity Advisor</p></div>
+					
+				</div>
+				<div class="col-md-4">
+					<%= image_tag("profileDmitry.jpg") %><div class="member"><%= link_to "Dmitry Yudakov", "https://bg.linkedin.com/in/dmitryyudakov", :target => "_blank" %><br/><p>Tech Co-founder</p></div>
+					<%= image_tag("profileTodor.jpg") %><div class="member"><%= link_to "Todor Kolev", "https://bg.linkedin.com/in/todor", :target => "_blank" %><br/><p>A.I. Advisor</p></div>
+					
+					
+				</div>
+				<div class="col-md-4">
+					<%= image_tag("profileFI.jpg") %><div class="member"><%= link_to "Founder Institute", "http://fi.co", :target => "_blank" %><br/><p>Incubator</p></div>
+					<%= image_tag("profileANG.jpg") %><div class="member"><%= link_to "Arsov Natchev Ganeva", "http://www.anglaw.com", :target => "_blank" %><br/><p>Legal Partner</p></div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% end%>

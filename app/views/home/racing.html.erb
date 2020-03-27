@@ -1,4 +1,296 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<div id="header" class="container-fluid dark graybg">
+	<div class="row">
+		<div class="col-sm-6">
+			<%= link_to image_tag("aurora-web-logo.png", class: "logo2", alt: "Logo of Trevor AI"), root_path %>
+		</div>
+		<div class="col-sm-6">
+			<ul class="nav navbar-nav navbar-right">
+                <li class="active"><%= link_to "Aurora R", racing_path, class: '' %></li>
+                <li><%= link_to "Aurora S", sport_path, class: '' %></li>
+                <li><%= link_to "Aurora E", electric_path, class: '' %></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="container-fluid dark">
+	<div class="row section-top">
+		<h1 class="text-center feature-title">A new breed of performance</h1>
+		<%= image_tag("web1.png", class: "render") %>
+		<div class="text-center sexy-stats feature-content">
+			<ul class="bottom">
+				<li>800kg</li>
+				<li>Mid-engined</li>
+				<li>375 HP/ton</li>
+				<li>10k RPM</li>
+				<li>L5c, 2-seater</li>
+				<li>~$500/mo</li>
+				<li>Late 2020</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row section">
+		<h1 class="text-center feature-title">Enhanced, yet familiar driving dynamics</h1>
+		<%= image_tag("web2.png", class: "render") %>
+		<div class="feature-content">
+			<div class="col-md-4 feature-column">
+				<h3 class="">High-revving heart</h3>
+				<p>Aurora R is powered by a rear-mounted superbike engine, revving up to 10k rpm, at which point your heart <u>syncs with the now</u> and nothing else exists.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Supercar performance</h3>
+				<p>Aurora R's innovative design process led to a truly lightweight sportscar, with handling and power-to-weight ratio that matches today's <u>supercars</u>.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Natural aero</h3>
+				<p>Aurora shapes are inspired by nature. The water drop design allows it to channel air in ways that contribute to efficiency and stability.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row section">
+		<h1 class="text-center feature-title hidden-xs hidden-sm" style="margin-bottom: -50px;">Thrilling Setup</h1>
+		<h1 class="text-center feature-title visible-xs visible-sm">Thrilling Setup</h1>
+		<%= image_tag("web3.png", class: "render") %>
+		<div class="feature-content">
+			<div class="col-md-6 feature-column">
+				<h3 class="">Drivetrain</h3>
+				<p>Turbocharged Hayabusa I4 Engine with 300 HP @10k RPM<br/>
+				6-Speed Auto-Sequential Gearbox with Paddle Shifters<br/>
+				Rear-wheel Direct Drive<br/>
+				Ohlins Adjustable Suspension<br/></p>
+			</div>
+			<div class="col-md-6 feature-column">
+				<h3 class="">Chassis</h3>
+				<p>Tubular Chassis with 3D printed aluminum joints and carbon fiber tubing or other traiditional alloys.</p>
+				<h3>Maintenance</h3>
+				<p>Aurora uses proven suppliers for critical components and easily 3d printable parts. Maintenance of all Aurora models is designed with economy and reliability in mind.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row section" style="padding-bottom: 0;">
+		<h1 class="text-center feature-title" style="margin-bottom: 50px;">Technology meets Craftsmanship</h1>
+		<div class="feature-content hidden-xs hidden-sm" style="position: absolute; margin-top: 0;">
+			<div class="col-md-4 feature-column">
+				<h3 class="">Handcrafted interior</h3>
+				<p>Aurora's interiors are handcrafted with sustainable, high-quality materials, including Alcantara, Aluminium, Hemp and Carbon fiber.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Modern tech</h3>
+				<p>Auroras feature a digital user interface, voice control assistant, digital mirrors and biometric immobilizer, as well as the usual AC, stereo system, parktronic and other creature comforts.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Safety-checked</h3>
+				<p>Auroras comply with L5c category vehicle safety in EU & US, and come equipped with: ABS, ESP, TC, Airbags and Autonomous Braking.</p>
+			</div>
+		</div>
+		<%= image_tag("web4.png", class: "render") %>
+		<div class="feature-content visible-xs visible-sm" style="position: relative; margin-top: 25px;">
+			<div class="col-md-4 feature-column">
+				<h3 class="">Handcrafted interior</h3>
+				<p>Aurora's interiors are handcrafted with sustainable, high-quality materials, such as Alcantara, Aluminium, Hemp and 3D printed parts.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Modern tech</h3>
+				<p>Auroras feature a digital user interface, voice control assistant, digital mirrors and biometric immobilizer, as well as the usual AC, stereo system, parktronic and other creature comforts.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Safety-checked</h3>
+				<p>Auroras comply with L5c category vehicle safety in EU & US, and come equipped with: ABS, ESP, TC, Airbags and Autonomous Braking.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row section" style="padding-top: 0; padding-bottom: 50px; position: relative;">
+		<p class="feature-title hidden-xs hidden-sm" style="position: absolute; top: 25px; left: 25px; max-width: 400px;">Aurora R is a non-street legal track vehicle, designed and built in Bulgaria, with advanced manufacturing processes and outsourced critical components, to ensure it's reliability and performance. For a street-legal version, go to <%= link_to "Aurora S", sport_path %> and <%= link_to "Aurora E", electric_path %>.</p>
+		<%= image_tag("web6.png", class: "render") %>
+		<div class="feature-content with-buttons">
+			<div class="col-md-3 feature-column">
+				<h3 class="feature-button" style="margin: 0; line-height: 1.5em;">Join<br/>the Waitlist</h3>
+				<div class="download">
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+						<form action="//linkedin.us12.list-manage.com/subscribe/post?u=5418fe1e541a0e43db9c54656&amp;id=e1e62066d1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="padding: 0;">
+							<div id="mc_embed_signup_scroll">
+						<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+						<div class="mc-field-group">
+							<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+						</label>
+							<input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL">
+						</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5418fe1e541a0e43db9c54656_e1e62066d1" tabindex="-1" value=""></div>
+							<div class="clear"><input type="submit" value="and Subscribe for Updates" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							</div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+				</div>
+			</div>
+
+			<div class="col-md-3 feature-column">
+				<%= link_to "Reserve<br/>your Aurora R".html_safe, reserve_path, class: "feature-button" %>
+				<p>with a $500 deposit and skip the waitlist.</p>
+			</div>
+
+			<div class="col-md-3 feature-column">
+				<%= link_to "Join<br/>the Team".html_safe, company_path, class: "feature-button" %>
+				<p>and dare to make automotive history.</p>
+			</div>
+
+			<div class="col-md-3 feature-column">
+				<%= link_to "Become<br/>an Investor".html_safe, investors_path, class: "feature-button" %>
+				<p>and build the future of mobility.</p>
+			</div>
+
+
+			<div class="col-md-12 feature-column visible-xs visible-sm">
+				<hr class="dashed"/>
+				<p class="feature-title" style="position: relative;">Aurora R is a non-street legal track vehicle, designed and built in Bulgaria, with advanced manufacturing processes and outsourced critical components, to ensure it's reliability and performance. For a street-legal version, go to <%= link_to "Aurora S", sport_path %> and <%= link_to "Aurora E", electric_path %>.</p>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<% if false %>
+<div id="core-features" class="container-fluid dark section-top">
+	<h1 class="text-center aurora">A new breed of track monster</h1>
+	<div class='row background-image a-perspective'>
+		<div class="text-center sexy-stats">
+			<ul class="bottom">
+				<li>800kg</li>
+				<li>Mid-engined</li>
+				<li>375 HP/ton</li>
+				<li>14k RPM</li>
+				<li>L5c, 2-seater</li>
+				<li>~$500/mo</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row heading">
+		<h1 class="text-center aurora">Enhanced, yet familiar driving dynamics</h1>
+	</div>
+	<div class='row background-image a-top'>
+		<div class="bottom">
+			<div class="col-md-4 feature-column">
+				<h3 class="">High-revving heart</h3>
+				<p>Aurora R is powered by a rear-mounted superbike engine, revving up to 14k rpm, at which point your heart <u>syncs with the now</u> and nothing else exists.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Supercar performance</h3>
+				<p>Aurora R's innovative design process led to a truly lightweight sportscar, with handling and power-to-weight ratio that matches today's <u>supercars</u>.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Natural aero</h3>
+				<p>Aurora shapes are inspired by nature. The water drop design allows it to channel air in ways that contribute to efficiency and stability.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row heading">
+		<h1 class="text-center aurora" style="margin-bottom: -50px;>Thrilling Setup</h1>
+	</div>
+	<div class='row background-image a-back'>
+		<div class="bottom">
+			<div class="col-md-6 feature-column">
+				<h3 class="">Drivetrain</h3>
+				<p>Turbocharged Hayabusa I4 Engine with 300 WHP @14k RPM<br/>
+				6-Speed Sequential Gearbox with Paddle Shifters<br/>
+				Rear-wheel Direct Drive<br/>
+				Ohlins Adjustable Suspension<br/></p>
+			</div>
+			<div class="col-md-6 feature-column">
+				<h3 class="">Chassis</h3>
+				<p>Tubular Chassis with roll-cage and 3D printed body panels</p>
+				<h3>Maintenance</h3>
+				<p>Aurora uses proven suppliers for critical components and easily 3d printable parts. Maintenance of all Aurora models should be within reach and budget.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row heading">
+		<h1 class="text-center aurora">Technology meets Craftsmanship</h1>
+	</div>
+	<div class='row background-image a-closeup-side'>
+		<div class="bottom">
+			<div class="col-md-4 feature-column">
+				<h3 class="">Handcrafted interior</h3>
+				<p>Aurora's interiors are handcrafted with sustainable, high-quality materials, including Alcantara, Aluminium, Hemp.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Modern tech</h3>
+				<p>Auroras feature a digital user interface, voice control assistant, digital mirrors and biometric immobilizer, as well as the usual stereo system, parktronic and other creature comforts.</p>
+			</div>
+			<div class="col-md-4 feature-column">
+				<h3 class="">Safety-checked</h3>
+				<p>Auroras comply with L5c category vehicle safety in EU & US, and come equipped with: ABS, ESP, TC, Airbags and Autonomous Braking.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row heading">
+		<h1 class="text-center aurora">Modern 3D Manufacturing Process</h1>
+	</div>
+	<div class='row background-image a-closeup-front'>
+	</div>
+	<div class="row heading">
+		<h1 class="text-center aurora">Preorder yours today</h1>
+	</div>
+	<div class='row background-image a-front'>
+	</div>
+</div>
+<% end %>
+
+<% if false %>
+
+<div id="meettrevor" class="container-fluid section dark bluebg">
+	<div class="container">
+		<div class="row">
+			<%= link_to "Get Started", "https://app.trevorai.com", class: 'button sign-up-button' %>
+			<% if false %>
+			<div class="col-md-4"></div>
+
+			<div class="col-md-4">
+				
+			</div>
+
+			
+			<div id="" class="download col-md-4">
+			<!-- Begin MailChimp Signup Form -->
+			<div id="mc_embed_signup">
+			<form action="https://linkedin.us12.list-manage.com/subscribe/post?u=5418fe1e541a0e43db9c54656&amp;id=731345807d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<div id="mc_embed_signup_scroll">
+				
+			<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+			<div class="mc-field-group">
+				<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+			</label>
+				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+			</div>
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5418fe1e541a0e43db9c54656_731345807d" tabindex="-1" value=""></div>
+				<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+				</div>
+			</form>
+			</div>
+			
+			<!--End mc_embed_signup-->
+			</div>
+			
+			<div class="col-md-4"></div>
+			<% end %>
+		</div>
+	</div>
+</div>
+<% end %>
